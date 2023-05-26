@@ -32,7 +32,7 @@ robot.runAndWait()
 time.sleep(1)
 
 done = False
-while (1):
+while True:
     received_message = connection.recv(1024)
     if not received_message:
         break
